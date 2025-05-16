@@ -14,20 +14,24 @@ Before you begin, ensure you have the following installed:
 * Node.js (v18.0 or higher recommended)npm or yarn or pnpm
 
 ## Installation
-Clone the repository:git clone git@github.com:Elkinrodriguez03/Todo-App.git
-Navigate into the project directory:cd simple-todo-app
-Replace simple-todo-app with the name of your project directory if it's different.
-Install dependencies:npm install
-# or
+* Clone the repository:
+  git clone git@github.com:Elkinrodriguez03/Todo-App.git
+* Navigate into the project directory:
+  cd simple-todo-app
+  Replace simple-todo-app with the name of your project directory if it's different.
+* Install dependencies:
+  npm install
+### or
 yarn install
-# or
+### or
 pnpm install
 
 ## Running the Application
-Start the development server:npm run dev
-# or
+* Start the development server:
+  npm run dev
+### or
 yarn dev
-# or
+### or
 pnpm dev
 
 Open your web browser and visit the address shown in the terminal (usually http://localhost:5173/).
