@@ -16,6 +16,8 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  max-width: 700px;
+  border-radius: 10px;
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0px 5px 7px rgba(27, 27, 27)
@@ -114,7 +116,7 @@ h1 {
 }
 
 .todo-list-item p {
-  margin: 0;
+  margin: 0 10px 0 0;
   font-size: 15px;
   color: rgb(161, 161, 161);
 }
@@ -122,6 +124,7 @@ h1 {
 .delete-icon {
   font-size: 25px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .delete-icon:hover {
@@ -171,4 +174,108 @@ h1 {
   margin: 5px;
   padding: 10px;
   width: fit-content  ; 
+}
+
+.completed-date {
+  font-size: 20px;
+  color: white !important;
+  margin-top: 10px !important;
+}
+
+/* Medium Devices */
+@media (max-width: 991px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .todo-wrapper {
+    width: 50%;
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .todo-input {
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .todo-input-item {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .todo-input-item:last-child {
+      margin-bottom: 0;
+  }
+
+  .todo-input-item label {
+    align-self: flex-start;
+    width: 100%;
+    margin: 15px 0 10px 15px;
+  }
+
+  .todo-input-item input {
+    width: 90%;
+  }
+
+  .primary-button {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .secondary-button {
+    width: 50%;
+    padding: 12px 20px;
+    margin-top: 0;
+  }
+
+  .btn-area {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .todo-list-item {
+    padding: 15px;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .todo-list-item .icons-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+  }
+
+  .todo-list-item h3 {
+    font-size: 22px;
+  }
+  .todo-list-item p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .delete-icon, .check-icon, .edit-icon {
+    font-size: 20px;
+  }
+}
+
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    .todo-list-item h3 {
+      font-size: 20px;
+    }
+    .todo-list-item p {
+      font-size: 12px;
+    }
+    .todo-input-item input {
+        width: 90%;
+    }
 }

@@ -252,7 +252,7 @@ function App() {
                 } else {
                   return (
                     <div className="todo-list-item" key={index}>
-                      <div>
+                      <div className="todo-item-content">
                         <h3>{todo.title}</h3>
                         <p>{todo.description}</p>
                       </div>
